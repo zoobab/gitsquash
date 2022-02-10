@@ -32,3 +32,4 @@ e5cd1b0 squashing Honk-Kong protests and Openwrt forums
 
 # Source
 
+Modified from https://stackoverflow.com/questions/7275508/is-there-a-way-to-squash-a-number-of-commits-non-interactively/44802383
