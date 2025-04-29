@@ -30,6 +30,17 @@ e5cd1b0 squashing Honk-Kong protests and Openwrt forums
 0cab911 add VID and PID to openocd config
 ```
 
+# Alternatives
+
+I now use this configuration in my ```$HOME/.gitconfig``` explained in this blog post ```git squash, add a global “squash” alias from bash``` (https://medium.com/@crafttang/git-squash-d4daf8a9b731):
+
+```
+$ cat .gitconfig
+[alias]
+    squash = "!f(){ git reset --soft HEAD~${1} && git commit --edit -m\"$(git log --format=%B --reverse HEAD..HEAD@{1})\"; };f"
+```
+
 # Source
 
-Modified from https://stackoverflow.com/questions/7275508/is-there-a-way-to-squash-a-number-of-commits-non-interactively/44802383
+* Modified from https://stackoverflow.com/questions/7275508/is-there-a-way-to-squash-a-number-of-commits-non-interactively/44802383
+* https://medium.com/@crafttang/git-squash-d4daf8a9b731
